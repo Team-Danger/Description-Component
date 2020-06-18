@@ -1,0 +1,27 @@
+{
+  "name": "fec-description-component",
+  "version": "1.0.0",
+  "description": "the AirBnB listing page description component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Danger/FEC-Description-Component.git"
+  },
+  "author": "Paul O'Day",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Team-Danger/FEC-Description-Component/issues"
+  },
+  "homepage": "https://github.com/Team-Danger/FEC-Description-Component#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^2.5.1"
+  }
+}
