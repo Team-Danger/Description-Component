@@ -14,7 +14,7 @@ For each listing it'll generate:
   - Location, either:
     - "Common Space" (up to one per listing)
     - "Bedroom{n}" (ordered - no "Bedroom2" without "Bedroom1")
-  - Bed (enumerated below)
+  - List of beds (enumerated below)
 - 1+ Amenities objects wtih:
   - Type (enumerated below)
   - Amenity (enumerated below)
@@ -75,3 +75,87 @@ amenities: [
   'On-Street Parking",
   'On-Site Parking"
 ]
+
+# Schema
+{
+  listing_id: String,
+  user: {
+    user_id: String,
+    user_name: String,
+    user_image: String
+  },
+  title: String,
+  description: String,
+  guests: Number,
+  bedrooms: Number,
+  beds: Number,
+  publicBaths: Number,
+  privateBaths: Number,
+  sleepingArrangements: [
+    {
+      location: String,
+      beds: [
+        { 
+          amount: Number,
+          type: [
+            'Double',
+            'Queen',
+            'Single',
+            'Sofa Bed',
+            'King',
+            'Small Double',
+            'Couch',
+            'Bunk Bed',
+            'Floor Mattress',
+            'Air Mattress',
+            'Crib',
+            'Toddler Bed',
+            'Hammock',
+            'Water Bed'
+          ]
+        }
+      ]
+    }
+  ],
+  amenities: [
+    {
+      type: [
+        'Basic',
+        'Facilities',
+        'Dining',
+        'Safety Features',
+        'Bed and Bath
+      ],
+      amenity: [
+        'Kitchen',
+        'Essentials',
+        'Wifi',
+        'TV',
+        'Heat',
+        'Air Conditioning',
+        'Iron',
+        'Shampoo',
+        'Hair Dryer',
+        'Breakfast, coffee, tea',
+        'Oven',
+        'Stove',
+        'Microwave',
+        'Refrigerator',
+        'Knives',
+        'Dining Table',
+        'Desk/Workspace',
+        'Fireplace',
+        'Closet/Drawers',
+        'Private Entrance',
+        'Smoke Detector',
+        'Carbon Monoxide Detector',
+        'First aid kit',
+        'Fire extinguisher',
+        'Lock on bedroom door',
+        'On-Street Parking",
+        'On-Site Parking"
+      ],
+      description: String
+    }
+  ]
+}
