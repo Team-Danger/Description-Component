@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "seed": "node db/seed.js"
+    "seed": "node db/seed.js",
+    "apiServer": "node api/server.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "eslint-plugin-jest": "^23.13.2",
+    "express": "^4.17.1",
     "faker": "^4.1.0",
     "jest": "^26.0.1",
     "lodash": "^4.17.15",

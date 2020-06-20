@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+// eslint-disable-next-line no-unused-vars
+const { db } = require('./db');
 const { bedStrings, amenityStrings } = require('../util/seedStrings.js');
 
 mongoose.Promise = global.Promise;
@@ -18,7 +20,7 @@ const listingSchema = new mongoose.Schema({
   beds: Number,
   publicBaths: Number,
   privateBaths: String,
-  sleepingArrangement: [{
+  sleepingArrangements: [{
     location: String,
     beds: [{
       Amount: Number,

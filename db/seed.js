@@ -1,5 +1,6 @@
+const Console = require('console');
 const _ = require('lodash');
-const db = require('./db');
+const { connection } = require('./db');
 const Listing = require('./Listing');
 const generateListing = require('../util/generateListing.js');
 
@@ -12,7 +13,8 @@ function insertListings(amount) {
   ));
   Promise.all(listingTasks)
     .then(() => Listing.create(listings))
-    .then(() => db.close());
+    .then(() => connection.close())
+    .catch((err) => Console.error(err));
 }
 
 insertListings(100);

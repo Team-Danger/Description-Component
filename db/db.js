@@ -3,9 +3,10 @@ const mongoose = require('mongoose');
 
 const mongoUri = 'mongodb://localhost/airbnbdesc';
 
-mongoose.connect(mongoUri);
+const db = mongoose.connect(mongoUri);
 const { connection } = mongoose;
 connection.on('error', Console.error.bind(console, 'connection error:'));
 connection.once('open', () => Console.log('connected to mongodb'));
 
-module.exports = connection;
+module.exports.connection = connection;
+module.exports.db = db;
