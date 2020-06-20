@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-// eslint-disable-next-line no-unused-vars
-const { db } = require('./db');
 const { bedStrings, amenityStrings } = require('../util/seedStrings.js');
+require('./db');
 
 mongoose.Promise = global.Promise;
 const amenityTypes = amenityStrings.map(({ type }) => type);
