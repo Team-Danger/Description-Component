@@ -53,6 +53,7 @@ module.exports.amenityStrings = [
       'Wifi',
       'TV',
       'Heat',
+      'Air Conditioning',
       'Closet/Drawers',
       'Desk/Workspace',
       'Fireplace',
@@ -92,7 +93,6 @@ module.exports.amenityStrings = [
   {
     type: 'Bed and Bath',
     amenities: [
-      'Air Conditioning',
       'Iron',
       'Shampoo/Conditioner',
       'Hair Dryer',

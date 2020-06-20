@@ -35,7 +35,7 @@ async function generateUser(id, imagePath) {
   const imageURL = `https://github.com/Team-Danger/FEC-Description-Component/profileImages/${id}.jpg`;
   const image = await axios({
     method: 'get',
-    url: 'https://source.unsplash.com/56x56/?profile,user',
+    url: 'http://lorempixel.com/56/56/',
     responseType: 'stream',
 
   });
@@ -137,4 +137,4 @@ async function generateListing(
     amenities: generateAmenities(),
   };
 }
-module.exports.generateListing = generateListing;
+module.exports = generateListing;
