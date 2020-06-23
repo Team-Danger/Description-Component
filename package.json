@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest",
     "seed": "node db/seed.js",
-    "apiServer": "node api/server.js",
-    "build:watch": "webpack --watch --mode production"
+    "server": "nodemon server/server.js",
+    "client": "webpack --watch --mode production"
   },
   "repository": {
     "type": "git",
@@ -42,6 +42,7 @@
     "lodash": "^4.17.15",
     "lorem-ipsum": "^2.0.3",
     "mongoose": "^5.9.19",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "webpack": "^4.43.0",

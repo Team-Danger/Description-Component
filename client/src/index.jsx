@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import Description from './components/Description';
 
-function App() {
-  return <Description />;
+function App({ id }) {
+  return <Description id={id} />;
 }
 
-ReactDOM.render(<App />, document.getElementById('container'));
+App.propTypes = {
+  id: PropTypes.string.isRequired,
+};
+
+ReactDOM.render(<App data="001" />, document.getElementById('container'));
