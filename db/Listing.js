@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const { bedStrings, amenityStrings } = require('../util/seedStrings.js');
+require('./db');
 
 mongoose.Promise = global.Promise;
 const amenityTypes = amenityStrings.map(({ type }) => type);
@@ -18,7 +19,7 @@ const listingSchema = new mongoose.Schema({
   beds: Number,
   publicBaths: Number,
   privateBaths: String,
-  sleepingArrangement: [{
+  sleepingArrangements: [{
     location: String,
     beds: [{
       Amount: Number,

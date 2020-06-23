@@ -2,13 +2,14 @@ const _ = require('lodash');
 const path = require('path');
 const { fail } = require('assert');
 const Listing = require('../db/Listing');
+const { connection } = require('../db/db.js');
 const generateListing = require('../util/generateListing.js');
 
 test('it should make the right kind of object', async () => {
   // generating the listing uses _.random
   // checking every possible value would be complex and (hopefully) uneccessary
   // but we should make sure the edges of the range are valid at least
-  jest.setTimeout(20000);
+  jest.setTimeout(90000);
   jest.unmock('lodash');
   const imagesPath = path.join(__dirname, 'testImages');
   _.random = (min) => min;
@@ -23,7 +24,6 @@ test('it should make the right kind of object', async () => {
     .then((err) => {
       expect(err).toBe(undefined);
     })
-    .catch((err) => {
-      fail(err);
-    });
+    .catch(fail)
+    .finally(() => connection.close());
 });
