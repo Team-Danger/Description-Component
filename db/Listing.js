@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const { bedStrings, amenityStrings } = require('../util/seedStrings.js');
-require('./db');
+//require('./db');
 
 mongoose.Promise = global.Promise;
 const amenityTypes = amenityStrings.map(({ type }) => type);
