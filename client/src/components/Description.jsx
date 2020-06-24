@@ -17,19 +17,22 @@ class Description extends React.Component {
   }
 
   render() {
-    const {
-      body, title, guests, bedrooms, beds, amenities,
-    } = this.state;
-    const amenityComponents = amenities.map(({ amenity, description }) => (
-      <Amenity type={amenity} description={description} />
-    ));
-    return (
-      <div>
-        <Title title={title} guests={guests} bedrooms={bedrooms} beds={beds} />
-        <p>{body}</p>
-        {amenityComponents}
-      </div>
-    );
+    if (this.state) {
+      const {
+        body, title, guests, bedrooms, beds, amenities,
+      } = this.state;
+      const amenityComponents = amenities.map(({ amenity, description }) => (
+        <Amenity type={amenity} description={description} />
+      ));
+      return (
+        <div>
+          <Title title={title} guests={guests} bedrooms={bedrooms} beds={beds} />
+          <div>{body}</div>
+          {amenityComponents}
+        </div>
+      );
+    }
+    return <div>no data</div>;
   }
 }
 

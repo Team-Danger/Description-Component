@@ -7,7 +7,8 @@
     "test": "jest",
     "seed": "node db/seed.js",
     "server": "nodemon server/server.js",
-    "client": "webpack --watch --mode production"
+    "client:prod": "webpack --watch --mode production",
+    "client:dev": "webpack --watch --mode development"
   },
   "repository": {
     "type": "git",
