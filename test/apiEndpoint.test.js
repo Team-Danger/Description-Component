@@ -7,6 +7,7 @@ require('babel-polyfill'); // this is needed to make async/await work
 
 // this just tests that the code for responding to a get request is right
 test('api should respond with the right data', async () => {
+  expect.assertions(3);
   const imagesPath = path.join(__dirname, 'testImages');
   const testId = '001';
   const testListing = new Listing(await generateListing(testId, testId, imagesPath));
@@ -22,10 +23,17 @@ test('api should respond with the right data', async () => {
       }
     });
   };
-  return request(app)
-    .get('/001/description')
-    .then((res) => {
-      expect(res.statusCode).toBe(200);
-      expect(res.text).toEqual(JSON.stringify(testListing));
-    });
+  const req = request(app);
+  const promises = [
+    req.get('/001/description')
+      .then((res) => {
+        expect(res.statusCode).toBe(200);
+        expect(res.text).toEqual(JSON.stringify(testListing));
+      }),
+    req.get('/002/description')
+      .then((res) => {
+        expect(res.statusCode).toBe(500);
+      }),
+  ];
+  return Promise.all(promises);
 });
