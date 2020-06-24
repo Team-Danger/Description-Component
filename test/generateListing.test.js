@@ -2,7 +2,6 @@ const _ = require('lodash');
 const path = require('path');
 const { fail } = require('assert');
 const Listing = require('../db/Listing');
-// const { connection } = require('../db/db.js');
 const generateListing = require('../util/generateListing.js');
 require('babel-polyfill'); // this is needed to make async/await work
 
@@ -27,5 +26,4 @@ test('it should make the right kind of object', async () => {
       expect(err).toBe(undefined);
     })
     .catch(fail);
-  // .finally(() => connection.close());
 });
