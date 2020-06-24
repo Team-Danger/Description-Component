@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
+import makeKey from '../../../util/makeKey';
 import Title from './Title';
 import Amenity from './Amenity';
+import SleepingArrangment from './SleepingArrangement';
 
 class Description extends React.Component {
   componentDidMount() {
@@ -19,15 +21,19 @@ class Description extends React.Component {
   render() {
     if (this.state) {
       const {
-        body, title, guests, bedrooms, beds, amenities,
+        body, title, guests, bedrooms, beds, amenities, sleepingArrangements,
       } = this.state;
       const amenityComponents = amenities.map(({ amenity, description }) => (
-        <Amenity type={amenity} description={description} />
+        <Amenity key={makeKey('desc')} type={amenity} description={description} />
+      ));
+      const sleepingComponents = sleepingArrangements.map(({ location, beds: bedsList }) => (
+        <SleepingArrangment key={makeKey('desc')} location={location} beds={bedsList} />
       ));
       return (
         <div>
           <Title title={title} guests={guests} bedrooms={bedrooms} beds={beds} />
           <div>{body}</div>
+          {sleepingComponents}
           {amenityComponents}
         </div>
       );
