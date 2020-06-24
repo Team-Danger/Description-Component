@@ -127,7 +127,7 @@ async function generateListing(
     listing_id: listingId,
     user: await generateUser(userId, imageFolder),
     title: generateTitle(),
-    description: lorem.generateParagraphs(5),
+    body: lorem.generateParagraphs(5),
     guests: _.random(1, 10),
     bedrooms: arrangements.length,
     beds: numBeds,

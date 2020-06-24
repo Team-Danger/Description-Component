@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import Title from './Title';
+import Amenity from './Amenity':
 
 class Description extends React.Component {
   componentDidMount() {
@@ -16,11 +17,16 @@ class Description extends React.Component {
   }
 
   render() {
-    const { description, title } = this.state;
+    const { body, title, guests, bedrooms, beds, amenities } = this.state;
+    const titleProps = { title, guests, bedrooms, beds };
+    const amenityComponents = amenities.map(({ amenity, description }) => (
+      <Amenity type={amenity} description={description} />
+    ));
     return (
       <div>
-        <Title title={title} />
-        {description}
+        <Title {...titleProps}/>
+        <p>{body}</p>
+        {amenityComponents}
       </div>
     );
   }
