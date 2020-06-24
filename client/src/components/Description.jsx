@@ -1,14 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import axios from 'axios';
 import Title from './Title';
 
-function endpoint(id) {
-  return `http://localhost:3000/${id}/description`;
-}
-
 class Description extends React.Component {
   componentDidMount() {
-    axios.get(endpoint('001'))
+    const { endpoint } = this.props;
+    axios.get(endpoint)
       .then(({ data }) => {
         this.setState(data);
       })
@@ -27,5 +25,9 @@ class Description extends React.Component {
     );
   }
 }
+
+Description.propTypes = {
+  endpoint: PropTypes.string.isRequired,
+};
 
 export default Description;
