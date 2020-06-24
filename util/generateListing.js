@@ -40,7 +40,12 @@ async function generateUser(id, imagePath) {
 
   });
   fsp.stat(imagePath)
-    .catch(() => fsp.mkdir(imagePath))
+    .catch((err) => {
+      if (err.code === 'ENOENT') {
+        return fsp.mkdir(imagePath);
+      }
+      throw err;
+    })
     .then(() => {
       image.data.pipe(fs.createWriteStream(path.join(imagePath, `${id}.jpg`)));
     });
