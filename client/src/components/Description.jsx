@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import Title from './Title';
-import Amenity from './Amenity':
+import Amenity from './Amenity';
 
 class Description extends React.Component {
   componentDidMount() {
@@ -17,14 +17,15 @@ class Description extends React.Component {
   }
 
   render() {
-    const { body, title, guests, bedrooms, beds, amenities } = this.state;
-    const titleProps = { title, guests, bedrooms, beds };
+    const {
+      body, title, guests, bedrooms, beds, amenities,
+    } = this.state;
     const amenityComponents = amenities.map(({ amenity, description }) => (
       <Amenity type={amenity} description={description} />
     ));
     return (
       <div>
-        <Title {...titleProps}/>
+        <Title title={title} guests={guests} bedrooms={bedrooms} beds={beds} />
         <p>{body}</p>
         {amenityComponents}
       </div>

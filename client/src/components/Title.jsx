@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Title({ title, guests, bedrooms, beds }) {
+function Title({
+  title, guests, bedrooms, beds,
+}) {
   return (
     <div>
       <div>{title}</div>
