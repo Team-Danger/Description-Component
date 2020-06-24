@@ -1,3 +1,4 @@
 node_modules
 *.todo
-util/profileImages
+util/profileImages/*
+test/testImages/*
