@@ -30,9 +30,9 @@ function randomIterations(min, max, fn) {
 }
 
 // returns a promise that will resolve to a user object
-async function generateUser(id, imagePath) {
+async function generateUser(userId, imagePath) {
   const name = `${faker.name.firstName()} ${faker.name.lastName()}`;
-  const imageURL = `https://github.com/Team-Danger/FEC-Description-Component/profileImages/${id}.jpg`;
+  const imageURL = `https://github.com/Team-Danger/FEC-Description-Component/util/profileImages/${userId}.jpg`;
   const image = await axios({
     method: 'get',
     url: 'http://lorempixel.com/56/56/',
@@ -42,10 +42,10 @@ async function generateUser(id, imagePath) {
   fsp.stat(imagePath)
     .catch(() => fsp.mkdir(imagePath))
     .then(() => {
-      image.data.pipe(fs.createWriteStream(path.join(imagePath, `${id}.jpg`)));
+      image.data.pipe(fs.createWriteStream(path.join(imagePath, `${userId}.jpg`)));
     });
   return {
-    user_id: id,
+    userId,
     name,
     image: imageURL,
   };
@@ -124,7 +124,7 @@ async function generateListing(
     numBeds += bedroom.beds.length;
   });
   return {
-    listing_id: listingId,
+    listingId,
     user: await generateUser(userId, imageFolder),
     title: generateTitle(),
     description: lorem.generateParagraphs(5),
