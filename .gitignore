@@ -1,5 +1,5 @@
 node_modules
 *.todo
-util/profileImages/*
-test/testImages/*
-client/dist/*
+util/profileImages
+test/testImages
+client/dist

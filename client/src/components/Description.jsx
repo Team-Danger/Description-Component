@@ -8,13 +8,13 @@ import User from './User';
 
 function makeAmenities(amenities) {
   return amenities.map(({ amenity, description }) => (
-    <Amenity key={makeKey('desc')} type={amenity} description={description} />
+    <Amenity key={makeKey('da')} type={amenity} description={description} />
   ));
 }
 
 function makeArrangements(sleepingArrangements) {
-  return sleepingArrangements.map(({ location, beds: bedsList }) => (
-    <SleepingArrangment key={makeKey('desc')} location={location} beds={bedsList} />
+  return sleepingArrangements.map(({ location, beds }) => (
+    <SleepingArrangment key={makeKey('dsa')} location={location} beds={beds} />
   ));
 }
 

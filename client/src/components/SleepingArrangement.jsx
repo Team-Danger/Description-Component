@@ -5,7 +5,7 @@ import Bed from './Bed';
 
 function SleepingArrangment({ beds, location }) {
   const bedComponents = beds.map(({ amount, type }) => (
-    <Bed key={makeKey('sleep')} amount={amount} type={type} />
+    <Bed key={makeKey('sa')} amount={amount} type={type} />
   ));
   return (
     <div>
