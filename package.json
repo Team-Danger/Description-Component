@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "lint": "eslint --ext .jsx --ext .js ./",
+    "verify": "npm run test && npm run lint",
     "seed": "node db/seed.js",
     "server": "nodemon server/server.js",
     "client:prod": "webpack --watch --mode production",
