@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function User({ name, imageUrl }) {
+function User({ name, image }) {
   return (
     <div>
-      <img src={imageUrl} alt={name} />
+      <img src={image} alt={name} />
       <div>{name}</div>
     </div>
   );
@@ -12,7 +12,7 @@ function User({ name, imageUrl }) {
 
 User.propTypes = {
   name: PropTypes.string.isRequired,
-  imageUrl: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
 
 export default User;

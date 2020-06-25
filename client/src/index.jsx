@@ -3,6 +3,7 @@ import axios from 'axios';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import Description from './components/Description';
+import BaseStyle from './components/styles/Base.style';
 
 function makeUrl(id) {
   return `http://localhost:3000/${id}/description`;
@@ -21,9 +22,14 @@ class App extends React.Component {
   }
 
   render() {
-    const { data } = this.state;
-    if (data) {
-      return <Description body={data} />;
+    if (this.state) {
+      const { data } = this.state;
+      return (
+        <>
+          <BaseStyle />
+          <Description data={data} />
+        </>
+      );
     }
     return <div>no data</div>;
   }

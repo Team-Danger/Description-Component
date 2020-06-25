@@ -28,7 +28,7 @@ function Description({ data }) {
     return (
       <div>
         <Title title={title} guests={guests} bedrooms={bedrooms} beds={beds} />
-        <User name={user.name} imageUrl={user.imageUrl} />
+        <User name={user.name} image={user.image} />
         <div>{body}</div>
         {sleepingComponents}
         {amenityComponents}
