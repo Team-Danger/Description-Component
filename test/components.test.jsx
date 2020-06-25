@@ -6,6 +6,7 @@ import { create } from 'react-test-renderer';
 import generateListing from '../util/generateListing';
 import Description from '../client/src/components/Description';
 import 'babel-polyfill'; // this is needed to make async/await work
+import 'jest-styled-components';
 
 describe('component tests', () => {
   test('it should render a description component', async () => {

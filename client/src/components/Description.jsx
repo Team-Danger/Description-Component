@@ -5,6 +5,7 @@ import Title from './Title';
 import Amenity from './Amenity';
 import SleepingArrangment from './SleepingArrangement';
 import User from './User';
+import BaseStyle from './styles/Base.style';
 
 function makeAmenities(amenities) {
   return amenities.map(({ amenity, description }) => (
@@ -27,6 +28,7 @@ function Description({ data }) {
     const sleepingComponents = makeArrangements(sleepingArrangements);
     return (
       <div>
+        <BaseStyle />
         <Title title={title} guests={guests} bedrooms={bedrooms} beds={beds} />
         <User name={user.name} image={user.image} />
         <div>{body}</div>

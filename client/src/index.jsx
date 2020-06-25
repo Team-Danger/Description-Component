@@ -25,10 +25,7 @@ class App extends React.Component {
     if (this.state) {
       const { data } = this.state;
       return (
-        <>
-          <BaseStyle />
-          <Description data={data} />
-        </>
+        <Description data={data} />
       );
     }
     return <div>no data</div>;
