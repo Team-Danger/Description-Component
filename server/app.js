@@ -7,7 +7,11 @@ const app = express();
 app.get('/:id/description', (req, res) => {
   Listing.findOne({ listingId: req.params.id })
     .then((listing) => {
-      res.send(listing);
+      if (listing === null) {
+        res.sendStatus(404);
+      } else {
+        res.send(listing);
+      }
     })
     .catch((err) => {
       res.sendStatus(500);
