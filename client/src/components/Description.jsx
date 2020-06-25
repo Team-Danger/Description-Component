@@ -5,6 +5,7 @@ import makeKey from '../../../util/makeKey';
 import Title from './Title';
 import Amenity from './Amenity';
 import SleepingArrangment from './SleepingArrangement';
+import User from './User';
 
 class Description extends React.Component {
   componentDidMount() {
@@ -21,7 +22,7 @@ class Description extends React.Component {
   render() {
     if (this.state) {
       const {
-        body, title, guests, bedrooms, beds, amenities, sleepingArrangements,
+        body, title, guests, bedrooms, beds, amenities, sleepingArrangements, user
       } = this.state;
       const amenityComponents = amenities.map(({ amenity, description }) => (
         <Amenity key={makeKey('desc')} type={amenity} description={description} />
@@ -32,6 +33,7 @@ class Description extends React.Component {
       return (
         <div>
           <Title title={title} guests={guests} bedrooms={bedrooms} beds={beds} />
+          <User name={user.name} imageUrl={user.imageUrl} />
           <div>{body}</div>
           {sleepingComponents}
           {amenityComponents}
