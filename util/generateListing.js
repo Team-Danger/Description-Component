@@ -3,20 +3,8 @@ const fsp = require('fs').promises;
 const path = require('path');
 const axios = require('axios');
 const _ = require('lodash');
-const { LoremIpsum } = require('lorem-ipsum');
 const faker = require('faker');
 const { bedStrings, amenityStrings, titleStrings } = require('./seedStrings.js');
-
-const lorem = new LoremIpsum({
-  sentencesPerParagraph: {
-    max: 8,
-    min: 4,
-  },
-  wordsPerSentence: {
-    max: 16,
-    min: 4,
-  },
-});
 
 // call fn(time) a random number of times from max to min (inclusive)
 // assumes max and min are >= 1
@@ -100,7 +88,7 @@ function generateAmenities() {
     const category = _.sample(unusedAmenities);
     // 50% chance of having a description
     const description = _.random(0, 1)
-      ? lorem.generateSentences(1)
+      ? faker.lorem.sentences(1)
       : '';
     const amenity = {
       type: category.type,
@@ -132,7 +120,7 @@ async function generateListing(
     listingId,
     user: await generateUser(userId, imageFolder),
     title: generateTitle(),
-    body: lorem.generateParagraphs(5),
+    body: faker.lorem.paragraphs(5),
     guests: _.random(1, 10),
     bedrooms: arrangements.length,
     beds: numBeds,
