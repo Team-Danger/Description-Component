@@ -5,11 +5,11 @@ mongoose.Promise = global.Promise;
 const amenityTypes = amenityStrings.map(({ type }) => type);
 const allAmenities = amenityStrings.reduce((acc, { amenities }) => acc.concat(amenities), []);
 const listingSchema = new mongoose.Schema({
-  listing_id: String,
+  listingId: String,
   user: {
-    user_id: String,
-    user_name: String,
-    user_image: String,
+    userId: String,
+    name: String,
+    image: String,
   },
   title: String,
   body: String,
@@ -21,8 +21,8 @@ const listingSchema = new mongoose.Schema({
   sleepingArrangements: [{
     location: String,
     beds: [{
-      Amount: Number,
-      bedType: {
+      amount: Number,
+      type: {
         type: String,
         enum: bedStrings,
       },

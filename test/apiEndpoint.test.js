@@ -7,22 +7,19 @@ require('babel-polyfill'); // this is needed to make async/await work
 
 // this just tests that the code for responding to a get request is right
 test('api should respond with the right data', async () => {
+  jest.setTimeout(90000);
   expect.assertions(3);
   const imagesPath = path.join(__dirname, 'testImages');
   const testId = '001';
   const testListing = new Listing(await generateListing(testId, testId, imagesPath));
   // don't need to test that mongo is working
-  Listing.findOne = ({ user }) => {
-    return new Promise((resolve, reject) => {
-      // eslint-disable-next-line camelcase
-      if (user.user_id === testId) {
-        resolve(testListing);
-      } else {
-        // eslint-disable-next-line camelcase
-        reject(new Error(`fake error from apiEndpoint.test.js; user_id = ${user.user_id}`));
-      }
-    });
-  };
+  Listing.findOne = ({ listingId }) => new Promise((resolve, reject) => {
+    if (listingId === testId) {
+      resolve(testListing);
+    } else {
+      reject(new Error(`fake error from apiEndpoint.test.js; listingId = ${listingId}`));
+    }
+  });
   const req = request(app);
   const promises = [
     req.get('/001/description')
