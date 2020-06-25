@@ -95,10 +95,9 @@ function generateArrangements() {
 // returns a promise resolving to a list of 5 to 20 non repeating amenities
 function generateAmenities() {
   const amenities = [];
-  // we'll remove amenities from this to make sure we don't repeat
-  // so we have to make a new copy each time, this will be run many times
+  const unusedAmenities = { ...amenityStrings };
   randomIterations(5, 20, () => {
-    const category = _.sample(amenityStrings);
+    const category = _.sample(unusedAmenities);
     // 50% chance of having a description
     const description = _.random(0, 1)
       ? lorem.generateSentences(1)
@@ -108,6 +107,7 @@ function generateAmenities() {
       amenity: _.sample(category.amenities),
       description,
     };
+    category.amenities = _.without(category.amenities, amenity.amenity);
     amenities.push(amenity);
   });
   return amenities;
