@@ -3,7 +3,6 @@ import axios from 'axios';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import Description from './components/Description';
-import BaseStyle from './components/styles/Base.style';
 
 function makeUrl(id) {
   return `http://localhost:3000/${id}/description`;
