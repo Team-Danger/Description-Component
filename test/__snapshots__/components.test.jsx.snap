@@ -76,28 +76,28 @@ exports[`component tests it should render a description component 1`] = `
   >
     All Amenities
   </a>
-  <div>
-    <div>
-      Cozy apartment in Portland
+  <div
+    className=""
+  >
+    <div
+      className=""
+    >
+      <div
+        className=""
+      >
+        Cozy apartment in Portland hosted by Devyn Macejkovic
+      </div>
+      <div
+        className=""
+      >
+        1 guest · 1 bedroom · 1 bed
+      </div>
     </div>
-    <div>
-      1
-    </div>
-    <div>
-      1
-    </div>
-    <div>
-      1
-    </div>
-  </div>
-  <div>
     <img
-      alt="Devyn Macejkovic"
-      src="https://github.com/Team-Danger/FEC-Description-Component/util/profileImages/001.jpg"
+      alt="user"
+      className=""
+      src="http://lorempixel.com/56/56/"
     />
-    <div>
-      Devyn Macejkovic
-    </div>
   </div>
   <div>
     Minima perspiciatis praesentium aperiam. Ut occaecati deserunt voluptatem suscipit. Enim minus nemo fugit et iure explicabo et commodi consequuntur.

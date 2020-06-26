@@ -6,7 +6,6 @@ import Title from './Title';
 import Amenity from './Amenity';
 import AmenitiesModal from './AmenitiesModal';
 import SleepingArrangment from './SleepingArrangement';
-import User from './User';
 import DescriptionStyle from './styles/Description.style';
 
 function makeAmenities(amenities) {
@@ -34,8 +33,7 @@ function Description({ data, showModal }) {
         amenities={amenities}
       />
       <Link to="/amenities">All Amenities</Link>
-      <Title title={title} guests={guests} bedrooms={bedrooms} beds={beds} />
-      <User name={user.name} image={user.image} />
+      <Title title={title} guests={guests} bedrooms={bedrooms} beds={beds} user={user} />
       <div>{body}</div>
       {sleepingComponents}
       {amenityComponents}
@@ -53,7 +51,7 @@ Description.propTypes = {
     beds: PropTypes.number.isRequired,
     amenities: PropTypes.arrayOf(PropTypes.shape(Amenity.propTypes)),
     sleepingArrangements: PropTypes.arrayOf(PropTypes.shape(SleepingArrangment.propTypes)),
-    user: PropTypes.shape(User.propTypes),
+    user: PropTypes.shape(Title.propTypes.user),
   }).isRequired,
 };
 

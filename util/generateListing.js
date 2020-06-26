@@ -20,7 +20,8 @@ function randomIterations(min, max, fn) {
 // returns a promise that will resolve to a user object
 async function generateUser(userId, imagePath) {
   const name = `${faker.name.firstName()} ${faker.name.lastName()}`;
-  const imageURL = `https://github.com/Team-Danger/FEC-Description-Component/util/profileImages/${userId}.jpg`;
+  const imageURL = 'http://lorempixel.com/56/56/';
+  // `https://github.com/Team-Danger/FEC-Description-Component/util/profileImages/${userId}.jpg`;
   const image = await axios({
     method: 'get',
     url: 'http://lorempixel.com/56/56/',
