@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component tests it should render a description component 1`] = `
+<div>
+  <div>
+    <div>
+      Cozy apartment in Portland
+    </div>
+    <div>
+      1
+    </div>
+    <div>
+      1
+    </div>
+    <div>
+      1
+    </div>
+  </div>
+  <div>
+    <img
+      alt="Devyn Macejkovic"
+      src="https://github.com/Team-Danger/FEC-Description-Component/util/profileImages/001.jpg"
+    />
+    <div>
+      Devyn Macejkovic
+    </div>
+  </div>
+  <div>
+    Minima perspiciatis praesentium aperiam. Ut occaecati deserunt voluptatem suscipit. Enim minus nemo fugit et iure explicabo et commodi consequuntur.
+ 
+Nesciunt dignissimos eos temporibus temporibus autem consequatur ea laudantium esse. Qui occaecati omnis quis amet voluptatum. Et libero ea et odio. Qui velit qui velit. Provident non fugiat dolorum amet a a aut nihil vel.
+ 
+Excepturi eligendi perferendis quo minus et asperiores nam. Blanditiis consequuntur esse autem. Eligendi aut alias cum consequatur pariatur inventore omnis. Sapiente aliquid illo cumque cupiditate quos cum aut placeat. Ut est ut error quo repellat id aliquam eos.
+ 
+Sunt est itaque ad aut. Quos quis laboriosam molestias quisquam ratione aut est omnis necessitatibus. Ut consectetur voluptas nam praesentium voluptates libero neque.
+ 
+Temporibus quia officiis cumque eos ut nemo occaecati voluptatibus dolor. Totam praesentium ducimus tempore qui rerum autem atque. Esse est inventore autem eligendi aliquid. Voluptates quis quo. Eveniet deleniti quam sed totam nam et.
+  </div>
+  <div>
+    <div>
+      Common Space
+    </div>
+    <div>
+      <div>
+        <div>
+          1
+        </div>
+        <div>
+          Double
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      icon here
+    </div>
+    <div>
+      Essentials
+    </div>
+    <div>
+      
+    </div>
+  </div>
+  <div>
+    <div>
+      icon here
+    </div>
+    <div>
+      Wifi
+    </div>
+    <div>
+      
+    </div>
+  </div>
+  <div>
+    <div>
+      icon here
+    </div>
+    <div>
+      TV
+    </div>
+    <div>
+      
+    </div>
+  </div>
+  <div>
+    <div>
+      icon here
+    </div>
+    <div>
+      Heat
+    </div>
+    <div>
+      
+    </div>
+  </div>
+  <div>
+    <div>
+      icon here
+    </div>
+    <div>
+      Air Conditioning
+    </div>
+    <div>
+      
+    </div>
+  </div>
+</div>
+`;

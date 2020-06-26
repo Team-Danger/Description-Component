@@ -12,7 +12,7 @@ const listingSchema = new mongoose.Schema({
     image: String,
   },
   title: String,
-  description: String,
+  body: String,
   guests: Number,
   bedrooms: Number,
   beds: Number,

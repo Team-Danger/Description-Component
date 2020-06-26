@@ -7,7 +7,9 @@
     "test": "jest",
     "seed": "node db/seed.js",
     "server": "nodemon server/server.js",
-    "client": "webpack --watch --mode production"
+    "client:prod": "webpack --watch --mode production",
+    "client:dev": "webpack --watch --mode development",
+    "updateSnapshots": "jest --updateSnapshot"
   },
   "repository": {
     "type": "git",
@@ -36,16 +38,19 @@
   "dependencies": {
     "axios": "^0.19.2",
     "babel-polyfill": "^6.26.0",
+    "enzyme": "^3.11.0",
     "eslint-plugin-jest": "^23.13.2",
     "express": "^4.17.1",
     "faker": "^4.1.0",
     "jest": "^26.0.1",
+    "jest-styled-components": "^7.0.2",
     "lodash": "^4.17.15",
-    "lorem-ipsum": "^2.0.3",
     "mongoose": "^5.9.19",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "styled-components": "^5.1.1",
     "supertest": "^4.0.2",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"

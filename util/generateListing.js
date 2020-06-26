@@ -3,20 +3,8 @@ const fsp = require('fs').promises;
 const path = require('path');
 const axios = require('axios');
 const _ = require('lodash');
-const { LoremIpsum } = require('lorem-ipsum');
 const faker = require('faker');
 const { bedStrings, amenityStrings, titleStrings } = require('./seedStrings.js');
-
-const lorem = new LoremIpsum({
-  sentencesPerParagraph: {
-    max: 8,
-    min: 4,
-  },
-  wordsPerSentence: {
-    max: 16,
-    min: 4,
-  },
-});
 
 // call fn(time) a random number of times from max to min (inclusive)
 // assumes max and min are >= 1
@@ -40,7 +28,12 @@ async function generateUser(userId, imagePath) {
 
   });
   fsp.stat(imagePath)
-    .catch(() => fsp.mkdir(imagePath))
+    .catch((err) => {
+      if (err.code === 'ENOENT') {
+        return fsp.mkdir(imagePath);
+      }
+      throw err;
+    })
     .then(() => {
       image.data.pipe(fs.createWriteStream(path.join(imagePath, `${userId}.jpg`)));
     });
@@ -90,19 +83,19 @@ function generateArrangements() {
 // returns a promise resolving to a list of 5 to 20 non repeating amenities
 function generateAmenities() {
   const amenities = [];
-  // we'll remove amenities from this to make sure we don't repeat
-  // so we have to make a new copy each time, this will be run many times
+  const unusedAmenities = { ...amenityStrings };
   randomIterations(5, 20, () => {
-    const category = _.sample(amenityStrings);
+    const category = _.sample(unusedAmenities);
     // 50% chance of having a description
     const description = _.random(0, 1)
-      ? lorem.generateSentences(1)
+      ? faker.lorem.sentences(1)
       : '';
     const amenity = {
       type: category.type,
       amenity: _.sample(category.amenities),
       description,
     };
+    category.amenities = _.without(category.amenities, amenity.amenity);
     amenities.push(amenity);
   });
   return amenities;
@@ -127,7 +120,7 @@ async function generateListing(
     listingId,
     user: await generateUser(userId, imageFolder),
     title: generateTitle(),
-    description: lorem.generateParagraphs(5),
+    body: faker.lorem.paragraphs(5),
     guests: _.random(1, 10),
     bedrooms: arrangements.length,
     beds: numBeds,
