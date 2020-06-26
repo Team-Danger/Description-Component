@@ -6,9 +6,11 @@ exports[`component tests it should render a description component 1`] = `
 >
   <section
     className=""
+    onClick={[Function]}
   >
     <div
       className=""
+      onClick={[Function]}
     >
       <div>
         <h1>
@@ -68,12 +70,12 @@ exports[`component tests it should render a description component 1`] = `
       </button>
     </div>
   </section>
-  <button
+  <a
+    href="/amenities"
     onClick={[Function]}
-    type="button"
   >
-    show
-  </button>
+    All Amenities
+  </a>
   <div>
     <div>
       Cozy apartment in Portland

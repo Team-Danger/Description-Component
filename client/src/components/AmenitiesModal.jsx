@@ -22,14 +22,14 @@ function sortAmenities(amenities) {
 // this takes a tuple because that's what Object.entries returns
 function AmenityType([type, amenities]) {
   const amenityComponents = amenities.map((amenity) => (
-    <div key={makeKey('amt')}>
+    <div key={makeKey('aml')}>
       <h2>{amenity.amenity}</h2>
       <p>{amenity.description}</p>
       <hr />
     </div>
   ));
   return (
-    <div>
+    <div key={makeKey('amt')}>
       <h1>{type}</h1>
       {amenityComponents}
     </div>

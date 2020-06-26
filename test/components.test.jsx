@@ -3,6 +3,7 @@ import _ from 'lodash';
 import faker from 'faker';
 import { join } from 'path';
 import { create } from 'react-test-renderer';
+import { MemoryRouter as Router } from 'react-router-dom';
 import generateListing from '../util/generateListing';
 import Description from '../client/src/components/Description';
 import 'babel-polyfill'; // this is needed to make async/await work
@@ -18,7 +19,11 @@ describe('component tests', () => {
     faker.seed(1337);
     const imagesPath = join(__dirname, 'testImages');
     const listing = await generateListing('001', '001', imagesPath);
-    const component = <Description data={listing} />;
+    const component = (
+      <Router>
+        <Description data={listing} />
+      </Router>
+    );
     const tree = create(component).toJSON();
 
     expect(tree).toMatchSnapshot();
