@@ -39,7 +39,6 @@ class Description extends React.Component {
     const {
       body, title, guests, bedrooms, beds, amenities, sleepingArrangements, user,
     } = data;
-    console.log(amenities);
     const amenityComponents = makeAmenities(amenities);
     const sleepingComponents = makeArrangements(sleepingArrangements);
     return (

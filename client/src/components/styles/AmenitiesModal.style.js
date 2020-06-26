@@ -10,11 +10,12 @@ const Modal = styled.section`
   background: rgba(0, 0, 0, 0.6);
 `;
 
-const ModalMain = styled.section`
+const ModalMain = styled.div`
   position:fixed;
+  height: 70%;
+  overflow-y: scroll;
   background: white;
   width: 80%;
-  height: auto;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);

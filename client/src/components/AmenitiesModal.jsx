@@ -17,17 +17,30 @@ function sortAmenities(amenities) {
   return amenityTypes;
 }
 
+// this takes a tuple because that's what Object.entries returns
+function AmenityType([type, amenities]) {
+  const amenityComponents = amenities.map((amenity) => (
+    <div>
+      <h2>{amenity.amenity}</h2>
+      <p>{amenity.description}</p>
+      <hr />
+    </div>
+  ));
+  return (
+    <div>
+      <h1>{type}</h1>
+      {amenityComponents}
+    </div>
+  );
+}
+
 function AmenitiesModal({ show, handleClose, amenities }) {
-  // const amenityTypes = sortAmenities(amenities);
-  //   <div>
-  //     <h1>amenity.type</h1>
-  //     <p>amenity.description</p>
-  //   </div>
-  // ));
+  const amenityTypes = sortAmenities(amenities);
+  const typeComponents = Object.entries(amenityTypes).map(AmenityType);
   return (
     <Modal show={show}>
       <ModalMain>
-        <div>test</div>
+        {typeComponents}
         <button type="button" onClick={handleClose}>X</button>
       </ModalMain>
     </Modal>

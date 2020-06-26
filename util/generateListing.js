@@ -80,10 +80,10 @@ function generateArrangements() {
   return arrangements;
 }
 
-// returns a promise resolving to a list of 5 to 20 non repeating amenities
+// returns a promise resolving to a list of 5 to 20(ish) non repeating amenities
 function generateAmenities() {
   const amenities = [];
-  const unusedAmenities = { ...amenityStrings };
+  const unusedAmenities = JSON.parse(JSON.stringify(amenityStrings));
   randomIterations(5, 20, () => {
     const category = _.sample(unusedAmenities);
     // 50% chance of having a description
@@ -95,8 +95,10 @@ function generateAmenities() {
       amenity: _.sample(category.amenities),
       description,
     };
-    category.amenities = _.without(category.amenities, amenity.amenity);
-    amenities.push(amenity);
+    if (amenity.amenity !== undefined) {
+      amenities.push(amenity);
+      category.amenities = _.without(category.amenities, amenity.amenity);
+    }
   });
   return amenities;
 }
