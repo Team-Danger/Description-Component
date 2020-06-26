@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import makeKey from '../../../util/makeKey';
 import Title from './Title';
 import Amenity from './Amenity';

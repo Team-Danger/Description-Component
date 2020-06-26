@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useHistory, Redirect } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import Amenity from './Amenity';
 import { Modal, ModalMain } from './styles/AmenitiesModal.style';
 import makeKey from '../../../util/makeKey';
