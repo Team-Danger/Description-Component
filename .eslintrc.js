@@ -23,6 +23,7 @@ module.exports = {
   plugins: [
     'react',
   ],
+  ignorePatterns: ['client/dist/*', 'node_modules/*'],
   rules: {
   },
 };
