@@ -1,7 +1,81 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`component tests it should render a description component 1`] = `
-<div>
+<div
+  className=""
+>
+  <section
+    className=""
+    onClick={[Function]}
+  >
+    <div
+      className=""
+      onClick={[Function]}
+    >
+      <div>
+        <h1>
+          Basic
+        </h1>
+        <div>
+          <h2>
+            Essentials
+          </h2>
+          <p>
+            
+          </p>
+          <hr />
+        </div>
+        <div>
+          <h2>
+            Wifi
+          </h2>
+          <p>
+            
+          </p>
+          <hr />
+        </div>
+        <div>
+          <h2>
+            TV
+          </h2>
+          <p>
+            
+          </p>
+          <hr />
+        </div>
+        <div>
+          <h2>
+            Heat
+          </h2>
+          <p>
+            
+          </p>
+          <hr />
+        </div>
+        <div>
+          <h2>
+            Air Conditioning
+          </h2>
+          <p>
+            
+          </p>
+          <hr />
+        </div>
+      </div>
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        X
+      </button>
+    </div>
+  </section>
+  <a
+    href="/amenities"
+    onClick={[Function]}
+  >
+    All Amenities
+  </a>
   <div>
     <div>
       Cozy apartment in Portland

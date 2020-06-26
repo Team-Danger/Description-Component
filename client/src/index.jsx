@@ -1,7 +1,12 @@
 import React from 'react';
-import axios from 'axios';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import axios from 'axios';
 import Description from './components/Description';
 
 function makeUrl(id) {
@@ -24,7 +29,16 @@ class App extends React.Component {
     if (this.state) {
       const { data } = this.state;
       return (
-        <Description data={data} />
+        <Router>
+          <Switch>
+            <Route path="/amenities">
+              <Description showModal data={data} />
+            </Route>
+            <Route path="/">
+              <Description data={data} />
+            </Route>
+          </Switch>
+        </Router>
       );
     }
     return <div>no data</div>;
