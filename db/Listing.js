@@ -29,7 +29,7 @@ const listingSchema = new mongoose.Schema({
     }],
   }],
   amenities: [{
-    amenityType: {
+    type: {
       type: String,
       enum: amenityTypes,
     },

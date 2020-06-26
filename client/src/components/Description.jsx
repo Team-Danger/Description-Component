@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 import makeKey from '../../../util/makeKey';
 import Title from './Title';
 import Amenity from './Amenity';
+import AmenitiesModal from './AmenitiesModal';
 import SleepingArrangment from './SleepingArrangement';
 import User from './User';
 import DescriptionStyle from './styles/Description.style';
 
 function makeAmenities(amenities) {
   return amenities.map(({ amenity, description }) => (
-    <Amenity key={makeKey('da')} type={amenity} description={description} />
+    <Amenity key={makeKey('da')} amenity={amenity} description={description} />
   ));
 }
 
@@ -19,25 +20,44 @@ function makeArrangements(sleepingArrangements) {
   ));
 }
 
-function Description({ data }) {
-  if (data) {
+class Description extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      show: false,
+      data: props.data,
+    };
+    this.setModalShown = this.setModalShown.bind(this);
+  }
+
+  setModalShown(show) {
+    this.setState({ show });
+  }
+
+  render() {
+    const { data, show } = this.state;
     const {
       body, title, guests, bedrooms, beds, amenities, sleepingArrangements, user,
     } = data;
+    console.log(amenities);
     const amenityComponents = makeAmenities(amenities);
     const sleepingComponents = makeArrangements(sleepingArrangements);
     return (
-      <div>
-        <DescriptionStyle />
+      <DescriptionStyle>
+        <AmenitiesModal
+          show={show}
+          handleClose={() => this.setModalShown(false)}
+          amenities={amenities}
+        />
+        <button type="button" onClick={() => this.setModalShown(true)}>show</button>
         <Title title={title} guests={guests} bedrooms={bedrooms} beds={beds} />
         <User name={user.name} image={user.image} />
         <div>{body}</div>
         {sleepingComponents}
         {amenityComponents}
-      </div>
+      </DescriptionStyle>
     );
   }
-  return <div>no data</div>;
 }
 
 Description.propTypes = {

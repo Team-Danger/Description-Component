@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export default styled.body`
+export default styled.div`
   font-family: sans-serif;
 `;
