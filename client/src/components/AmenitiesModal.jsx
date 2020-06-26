@@ -38,8 +38,8 @@ function AmenitiesModal({ show, handleClose, amenities }) {
   const amenityTypes = sortAmenities(amenities);
   const typeComponents = Object.entries(amenityTypes).map(AmenityType);
   return (
-    <Modal show={show}>
-      <ModalMain>
+    <Modal show={show} onClick={handleClose}>
+      <ModalMain onClick={(e) => e.stopPropagation()}>
         {typeComponents}
         <button type="button" onClick={handleClose}>X</button>
       </ModalMain>
