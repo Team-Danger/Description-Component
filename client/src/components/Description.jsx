@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import makeKey from '../../../util/makeKey';
 import Title from './Title';
+import Body from './Body';
 import Amenity from './Amenity';
 import AmenitiesModal from './AmenitiesModal';
 import SleepingArrangment from './SleepingArrangement';
@@ -33,7 +34,7 @@ function Description({ data, showModal }) {
         amenities={amenities}
       />
       <Title title={title} guests={guests} bedrooms={bedrooms} beds={beds} user={user} />
-      <div>{body}</div>
+      <Body>{body}</Body>
       {sleepingComponents}
       {amenityComponents}
       <Link to="/amenities">All Amenities</Link>

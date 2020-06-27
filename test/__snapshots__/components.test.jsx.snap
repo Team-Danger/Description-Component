@@ -1,15 +1,121 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`component tests it should render a description component 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  color: rgb(34,34,34) !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  margin-bottom: 8px !important;
+}
+
+.c6 {
+  color: #222222 !important;
+  display: block;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+
+.c7 {
+  border-radius: 50%;
+}
+
+.c1 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.c2 {
+  position: fixed;
+  height: 70%;
+  overflow-y: scroll;
+  background: white;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 20px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.c9 {
+  margin-bottom: 8px;
+}
+
+.c11 {
+  color: rgb(34,34,34) !important;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+
+.c10 {
+  color: rgb(34,34,34) !important;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  margin-bottom: 8px;
+}
+
+.c0 {
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  width: 50%;
+}
+
 <div
-  className=""
+  className="c0"
 >
   <section
-    className=""
+    className="c1"
     onClick={[Function]}
   >
     <div
-      className=""
+      className="c2"
       onClick={[Function]}
     >
       <div>
@@ -71,30 +177,34 @@ exports[`component tests it should render a description component 1`] = `
     </div>
   </section>
   <div
-    className=""
+    className="c3"
   >
     <div
-      className=""
+      className="c4"
     >
       <div
-        className=""
+        className="c5"
       >
         Cozy apartment in Portland hosted by Devyn Macejkovic
       </div>
       <div
-        className=""
+        className="c6"
       >
         1 guest · 1 bedroom · 1 bed
       </div>
     </div>
     <img
       alt="user"
-      className=""
+      className="c7"
       src="http://lorempixel.com/56/56/"
     />
   </div>
-  <div>
-    Minima perspiciatis praesentium aperiam. Ut occaecati deserunt voluptatem suscipit. Enim minus nemo fugit et iure explicabo et commodi consequuntur.
+  <span
+    width={0}
+  >
+    <span />
+    <span>
+      Minima perspiciatis praesentium aperiam. Ut occaecati deserunt voluptatem suscipit. Enim minus nemo fugit et iure explicabo et commodi consequuntur.
  
 Nesciunt dignissimos eos temporibus temporibus autem consequatur ea laudantium esse. Qui occaecati omnis quis amet voluptatum. Et libero ea et odio. Qui velit qui velit. Provident non fugiat dolorum amet a a aut nihil vel.
  
@@ -103,22 +213,43 @@ Excepturi eligendi perferendis quo minus et asperiores nam. Blanditiis consequun
 Sunt est itaque ad aut. Quos quis laboriosam molestias quisquam ratione aut est omnis necessitatibus. Ut consectetur voluptas nam praesentium voluptates libero neque.
  
 Temporibus quia officiis cumque eos ut nemo occaecati voluptatibus dolor. Totam praesentium ducimus tempore qui rerum autem atque. Esse est inventore autem eligendi aliquid. Voluptates quis quo. Eveniet deleniti quam sed totam nam et.
-  </div>
+    </span>
+    <span
+      style={
+        Object {
+          "left": 0,
+          "position": "fixed",
+          "top": 0,
+          "visibility": "hidden",
+        }
+      }
+    >
+      <span>
+        ...
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          read more
+        </button>
+      </span>
+    </span>
+  </span>
   <div
-    className=""
+    className="c8"
   >
     <div
-      className=""
+      className="c9"
     >
       <SvgrURL />
     </div>
     <div
-      className=""
+      className="c10"
     >
       Common Space
     </div>
     <div
-      className=""
+      className="c11"
     >
       1 Double
     </div>
