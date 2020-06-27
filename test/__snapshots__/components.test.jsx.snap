@@ -42,6 +42,41 @@ exports[`component tests it should render a description component 1`] = `
   border-radius: 50%;
 }
 
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c15 {
+  margin-right: 16px !important;
+  margin-left: 0px !important;
+}
+
 .c1 {
   display: none;
   position: fixed;
@@ -254,60 +289,76 @@ Temporibus quia officiis cumque eos ut nemo occaecati voluptatibus dolor. Totam 
       1 Double
     </div>
   </div>
-  <div>
-    <div>
-      icon here
+  <div
+    className="c12"
+  >
+    <div
+      className="c13"
+    >
+      <div
+        className="c14"
+      >
+        <div
+          className="c15"
+        >
+          <SvgrURL />
+        </div>
+        <div>
+          Essentials
+        </div>
+      </div>
+      <div
+        className="c14"
+      >
+        <div
+          className="c15"
+        >
+          <SvgrURL />
+        </div>
+        <div>
+          Wifi
+        </div>
+      </div>
+      <div
+        className="c14"
+      >
+        <div
+          className="c15"
+        >
+          <SvgrURL />
+        </div>
+        <div>
+          TV
+        </div>
+      </div>
+      <div
+        className="c14"
+      >
+        <div
+          className="c15"
+        >
+          <SvgrURL />
+        </div>
+        <div>
+          Heat
+        </div>
+      </div>
+      <div
+        className="c14"
+      >
+        <div
+          className="c15"
+        >
+          <SvgrURL />
+        </div>
+        <div>
+          Air Conditioning
+        </div>
+      </div>
     </div>
-    <div>
-      Essentials
-    </div>
-    <div>
-      
-    </div>
-  </div>
-  <div>
-    <div>
-      icon here
-    </div>
-    <div>
-      Wifi
-    </div>
-    <div>
-      
-    </div>
-  </div>
-  <div>
-    <div>
-      icon here
-    </div>
-    <div>
-      TV
-    </div>
-    <div>
-      
-    </div>
-  </div>
-  <div>
-    <div>
-      icon here
-    </div>
-    <div>
-      Heat
-    </div>
-    <div>
-      
-    </div>
-  </div>
-  <div>
-    <div>
-      icon here
-    </div>
-    <div>
-      Air Conditioning
-    </div>
-    <div>
-      
-    </div>
+    <div
+      className="c13"
+    />
   </div>
   <a
     href="/amenities"
