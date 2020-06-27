@@ -70,12 +70,6 @@ exports[`component tests it should render a description component 1`] = `
       </button>
     </div>
   </section>
-  <a
-    href="/amenities"
-    onClick={[Function]}
-  >
-    All Amenities
-  </a>
   <div
     className=""
   >
@@ -110,19 +104,23 @@ Sunt est itaque ad aut. Quos quis laboriosam molestias quisquam ratione aut est 
  
 Temporibus quia officiis cumque eos ut nemo occaecati voluptatibus dolor. Totam praesentium ducimus tempore qui rerum autem atque. Esse est inventore autem eligendi aliquid. Voluptates quis quo. Eveniet deleniti quam sed totam nam et.
   </div>
-  <div>
-    <div>
+  <div
+    className=""
+  >
+    <div
+      className=""
+    >
+      <SvgrURL />
+    </div>
+    <div
+      className=""
+    >
       Common Space
     </div>
-    <div>
-      <div>
-        <div>
-          1
-        </div>
-        <div>
-          Double
-        </div>
-      </div>
+    <div
+      className=""
+    >
+      1 Double
     </div>
   </div>
   <div>
@@ -180,5 +178,11 @@ Temporibus quia officiis cumque eos ut nemo occaecati voluptatibus dolor. Totam 
       
     </div>
   </div>
+  <a
+    href="/amenities"
+    onClick={[Function]}
+  >
+    All Amenities
+  </a>
 </div>
 `;

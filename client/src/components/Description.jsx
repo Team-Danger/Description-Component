@@ -32,11 +32,11 @@ function Description({ data, showModal }) {
         show={showModal}
         amenities={amenities}
       />
-      <Link to="/amenities">All Amenities</Link>
       <Title title={title} guests={guests} bedrooms={bedrooms} beds={beds} user={user} />
       <div>{body}</div>
       {sleepingComponents}
       {amenityComponents}
+      <Link to="/amenities">All Amenities</Link>
     </DescriptionStyle>
   );
 }

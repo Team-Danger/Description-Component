@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import pluralString from '../../../util/pluralString';
 import {
   TitleBox,
   HeadlineBox,
@@ -11,11 +12,6 @@ import {
 function Title({
   title, guests, bedrooms, beds, user,
 }) {
-  const pluralString = (amount, type) => (
-    amount > 1
-      ? `${amount} ${type}s`
-      : `${amount} ${type}`
-  );
   return (
     <TitleBox>
       <HeadlineBox>
