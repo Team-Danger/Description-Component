@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import makeKey from '../../../util/makeKey';
 import pluralString from '../../../util/pluralString';
 import Bed from './Bed';
+import { Section } from './styles/Description.style';
 import {
   ArrangementBox,
   BedIcon,
@@ -16,13 +17,15 @@ function SleepingArrangment({ beds, location }) {
     <BedTitle key={makeKey('sa')}>{pluralString(amount, type)}</BedTitle>
   ));
   return (
-    <ArrangementBox>
-      <BedIcon>
-        <BedImage />
-      </BedIcon>
-      <LocationTitle>{location}</LocationTitle>
-      {bedComponents}
-    </ArrangementBox>
+    <Section>
+      <ArrangementBox>
+        <BedIcon>
+          <BedImage />
+        </BedIcon>
+        <LocationTitle>{location}</LocationTitle>
+        {bedComponents}
+      </ArrangementBox>
+    </Section>
   );
 }
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import makeKey from '../../../util/makeKey';
 import Title from './Title';
 import Body from './Body';
@@ -8,7 +7,7 @@ import Amenity from './Amenity';
 import Amenities from './Amenities';
 import AmenitiesModal from './AmenitiesModal';
 import SleepingArrangment from './SleepingArrangement';
-import DescriptionStyle from './styles/Description.style';
+import { DescriptionBox } from './styles/Description.style';
 
 function makeArrangements(sleepingArrangements) {
   return sleepingArrangements.map(({ location, beds }) => (
@@ -22,7 +21,7 @@ function Description({ data, showModal }) {
   } = data;
   const sleepingComponents = makeArrangements(sleepingArrangements);
   return (
-    <DescriptionStyle>
+    <DescriptionBox>
       <AmenitiesModal
         show={showModal}
         amenities={amenities}
@@ -31,8 +30,7 @@ function Description({ data, showModal }) {
       <Body>{body}</Body>
       {sleepingComponents}
       <Amenities amenities={amenities} />
-      <Link to="/amenities">All Amenities</Link>
-    </DescriptionStyle>
+    </DescriptionBox>
   );
 }
 

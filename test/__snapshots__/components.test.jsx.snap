@@ -2,6 +2,20 @@
 
 exports[`component tests it should render a description component 1`] = `
 .c3 {
+  padding-top: 32px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #ddd;
+}
+
+.c0 {
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  width: 50%;
+}
+
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12,7 +26,7 @@ exports[`component tests it should render a description component 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -22,7 +36,7 @@ exports[`component tests it should render a description component 1`] = `
   flex-direction: column;
 }
 
-.c5 {
+.c6 {
   color: rgb(34,34,34) !important;
   font-weight: 600 !important;
   font-size: 16px !important;
@@ -30,7 +44,7 @@ exports[`component tests it should render a description component 1`] = `
   margin-bottom: 8px !important;
 }
 
-.c6 {
+.c7 {
   color: #222222 !important;
   display: block;
   font-weight: 400 !important;
@@ -38,28 +52,33 @@ exports[`component tests it should render a description component 1`] = `
   line-height: 20px !important;
 }
 
-.c7 {
+.c8 {
   border-radius: 50%;
 }
 
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c9 {
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-style: inherit !important;
+  line-height: inherit !important;
+  cursor: pointer !important;
+  -webkit-user-select: auto !important;
+  -moz-user-select: auto !important;
+  -ms-user-select: auto !important;
+  user-select: auto !important;
+  color: rgb(34,34,34) !important;
+  font-weight: 600 !important;
+  background: transparent !important;
+  border-width: 0px !important;
+  border-style: initial !important;
+  border-color: initial !important;
+  border-image: initial !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  -webkit-text-decoration: underline !important;
+  text-decoration: underline !important;
+  border-radius: 4px !important;
+  outline: none !important;
 }
 
 .c14 {
@@ -73,6 +92,26 @@ exports[`component tests it should render a description component 1`] = `
 }
 
 .c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c17 {
   margin-right: 16px !important;
   margin-left: 0px !important;
 }
@@ -100,7 +139,7 @@ exports[`component tests it should render a description component 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c8 {
+.c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -113,11 +152,11 @@ exports[`component tests it should render a description component 1`] = `
   border-radius: 10px;
 }
 
-.c9 {
+.c11 {
   margin-bottom: 8px;
 }
 
-.c11 {
+.c13 {
   color: rgb(34,34,34) !important;
   font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif !important;
   font-weight: 400 !important;
@@ -125,21 +164,13 @@ exports[`component tests it should render a description component 1`] = `
   line-height: 20px !important;
 }
 
-.c10 {
+.c12 {
   color: rgb(34,34,34) !important;
   font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif !important;
   font-weight: 600 !important;
   font-size: 16px !important;
   line-height: 20px !important;
   margin-bottom: 8px;
-}
-
-.c0 {
-  font-family: -apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif !important;
-  font-weight: 400 !important;
-  font-size: 16px !important;
-  line-height: 24px !important;
-  width: 50%;
 }
 
 <div
@@ -220,26 +251,33 @@ exports[`component tests it should render a description component 1`] = `
       <div
         className="c5"
       >
-        Cozy apartment in Portland hosted by Devyn Macejkovic
+        <div
+          className="c6"
+        >
+          Cozy apartment in Portland hosted by Devyn Macejkovic
+        </div>
+        <div
+          className="c7"
+        >
+          1 guest · 1 bedroom · 1 bed
+        </div>
       </div>
-      <div
-        className="c6"
-      >
-        1 guest · 1 bedroom · 1 bed
-      </div>
+      <img
+        alt="user"
+        className="c8"
+        src="http://lorempixel.com/56/56/"
+      />
     </div>
-    <img
-      alt="user"
-      className="c7"
-      src="http://lorempixel.com/56/56/"
-    />
   </div>
-  <span
-    width={0}
+  <div
+    className="c3"
   >
-    <span />
-    <span>
-      Minima perspiciatis praesentium aperiam. Ut occaecati deserunt voluptatem suscipit. Enim minus nemo fugit et iure explicabo et commodi consequuntur.
+    <span
+      width={0}
+    >
+      <span />
+      <span>
+        Minima perspiciatis praesentium aperiam. Ut occaecati deserunt voluptatem suscipit. Enim minus nemo fugit et iure explicabo et commodi consequuntur.
  
 Nesciunt dignissimos eos temporibus temporibus autem consequatur ea laudantium esse. Qui occaecati omnis quis amet voluptatum. Et libero ea et odio. Qui velit qui velit. Provident non fugiat dolorum amet a a aut nihil vel.
  
@@ -248,123 +286,133 @@ Excepturi eligendi perferendis quo minus et asperiores nam. Blanditiis consequun
 Sunt est itaque ad aut. Quos quis laboriosam molestias quisquam ratione aut est omnis necessitatibus. Ut consectetur voluptas nam praesentium voluptates libero neque.
  
 Temporibus quia officiis cumque eos ut nemo occaecati voluptatibus dolor. Totam praesentium ducimus tempore qui rerum autem atque. Esse est inventore autem eligendi aliquid. Voluptates quis quo. Eveniet deleniti quam sed totam nam et.
-    </span>
-    <span
-      style={
-        Object {
-          "left": 0,
-          "position": "fixed",
-          "top": 0,
-          "visibility": "hidden",
+      </span>
+      <span
+        style={
+          Object {
+            "left": 0,
+            "position": "fixed",
+            "top": 0,
+            "visibility": "hidden",
+          }
         }
-      }
-    >
-      <span>
-        ...
-        <button
-          onClick={[Function]}
-          type="button"
-        >
-          read more
-        </button>
+      >
+        <span>
+          ...
+          <button
+            className="c9"
+            onClick={[Function]}
+            type="button"
+          >
+            read more
+          </button>
+        </span>
       </span>
     </span>
-  </span>
+  </div>
   <div
-    className="c8"
+    className="c3"
   >
-    <div
-      className="c9"
-    >
-      <SvgrURL />
-    </div>
     <div
       className="c10"
     >
-      Common Space
-    </div>
-    <div
-      className="c11"
-    >
-      1 Double
+      <div
+        className="c11"
+      >
+        <SvgrURL />
+      </div>
+      <div
+        className="c12"
+      >
+        Common Space
+      </div>
+      <div
+        className="c13"
+      >
+        1 Double
+      </div>
     </div>
   </div>
   <div
-    className="c12"
+    className="c3"
   >
     <div
-      className="c13"
+      className="c14"
     >
       <div
-        className="c14"
+        className="c15"
       >
         <div
-          className="c15"
+          className="c16"
         >
-          <SvgrURL />
+          <div
+            className="c17"
+          >
+            <SvgrURL />
+          </div>
+          <div>
+            Essentials
+          </div>
         </div>
-        <div>
-          Essentials
+        <div
+          className="c16"
+        >
+          <div
+            className="c17"
+          >
+            <SvgrURL />
+          </div>
+          <div>
+            Wifi
+          </div>
+        </div>
+        <div
+          className="c16"
+        >
+          <div
+            className="c17"
+          >
+            <SvgrURL />
+          </div>
+          <div>
+            TV
+          </div>
+        </div>
+        <div
+          className="c16"
+        >
+          <div
+            className="c17"
+          >
+            <SvgrURL />
+          </div>
+          <div>
+            Heat
+          </div>
+        </div>
+        <div
+          className="c16"
+        >
+          <div
+            className="c17"
+          >
+            <SvgrURL />
+          </div>
+          <div>
+            Air Conditioning
+          </div>
         </div>
       </div>
       <div
-        className="c14"
-      >
-        <div
-          className="c15"
-        >
-          <SvgrURL />
-        </div>
-        <div>
-          Wifi
-        </div>
-      </div>
-      <div
-        className="c14"
-      >
-        <div
-          className="c15"
-        >
-          <SvgrURL />
-        </div>
-        <div>
-          TV
-        </div>
-      </div>
-      <div
-        className="c14"
-      >
-        <div
-          className="c15"
-        >
-          <SvgrURL />
-        </div>
-        <div>
-          Heat
-        </div>
-      </div>
-      <div
-        className="c14"
-      >
-        <div
-          className="c15"
-        >
-          <SvgrURL />
-        </div>
-        <div>
-          Air Conditioning
-        </div>
-      </div>
+        className="c15"
+      />
     </div>
-    <div
-      className="c13"
-    />
+    <a
+      href="/amenities"
+      onClick={[Function]}
+    >
+      All Amenities
+    </a>
   </div>
-  <a
-    href="/amenities"
-    onClick={[Function]}
-  >
-    All Amenities
-  </a>
 </div>
 `;

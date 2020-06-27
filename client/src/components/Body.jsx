@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Truncate from 'react-truncate';
+import { ReadMore } from './styles/Body.style';
+import { Section } from './styles/Description.style';
 
 class Body extends React.Component {
   constructor(props) {
@@ -23,19 +25,21 @@ class Body extends React.Component {
     const { expanded } = this.state;
     const { children } = this.props;
     return (
-      <Truncate
-        lines={!expanded && 5}
-        ellipsis={(
-          <span>
-            ...
-            <button type="button" onClick={this.toggleLines}>
-              read more
-            </button>
-          </span>
-      )}
-      >
-        {children}
-      </Truncate>
+      <Section>
+        <Truncate
+          lines={!expanded && 5}
+          ellipsis={(
+            <span>
+              ...
+              <ReadMore type="button" onClick={this.toggleLines}>
+                read more
+              </ReadMore>
+            </span>
+        )}
+        >
+          {children}
+        </Truncate>
+      </Section>
     );
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import pluralString from '../../../util/pluralString';
+import { Section } from './styles/Description.style';
 import {
   TitleBox,
   HeadlineBox,
@@ -13,15 +14,17 @@ function Title({
   title, guests, bedrooms, beds, user,
 }) {
   return (
-    <TitleBox>
-      <HeadlineBox>
-        <Headline>{`${title} hosted by ${user.name}`}</Headline>
-        <Subtitle>
-          {`${pluralString(guests, 'guest')} · ${pluralString(bedrooms, 'bedroom')} · ${pluralString(beds, 'bed')}`}
-        </Subtitle>
-      </HeadlineBox>
-      <Image src={user.image} alt="user" />
-    </TitleBox>
+    <Section>
+      <TitleBox>
+        <HeadlineBox>
+          <Headline>{`${title} hosted by ${user.name}`}</Headline>
+          <Subtitle>
+            {`${pluralString(guests, 'guest')} · ${pluralString(bedrooms, 'bedroom')} · ${pluralString(beds, 'bed')}`}
+          </Subtitle>
+        </HeadlineBox>
+        <Image src={user.image} alt="user" />
+      </TitleBox>
+    </Section>
   );
 }
 
