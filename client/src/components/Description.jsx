@@ -5,15 +5,10 @@ import makeKey from '../../../util/makeKey';
 import Title from './Title';
 import Body from './Body';
 import Amenity from './Amenity';
+import Amenities from './Amenities';
 import AmenitiesModal from './AmenitiesModal';
 import SleepingArrangment from './SleepingArrangement';
 import DescriptionStyle from './styles/Description.style';
-
-function makeAmenities(amenities) {
-  return amenities.map(({ amenity, description }) => (
-    <Amenity key={makeKey('da')} amenity={amenity} description={description} />
-  ));
-}
 
 function makeArrangements(sleepingArrangements) {
   return sleepingArrangements.map(({ location, beds }) => (
@@ -25,7 +20,6 @@ function Description({ data, showModal }) {
   const {
     body, title, guests, bedrooms, beds, amenities, sleepingArrangements, user,
   } = data;
-  const amenityComponents = makeAmenities(amenities);
   const sleepingComponents = makeArrangements(sleepingArrangements);
   return (
     <DescriptionStyle>
@@ -36,7 +30,7 @@ function Description({ data, showModal }) {
       <Title title={title} guests={guests} bedrooms={bedrooms} beds={beds} user={user} />
       <Body>{body}</Body>
       {sleepingComponents}
-      {amenityComponents}
+      <Amenities amenities={amenities} />
       <Link to="/amenities">All Amenities</Link>
     </DescriptionStyle>
   );
