@@ -2,7 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import Amenity from './Amenity';
-import { Modal, ModalMain } from './styles/AmenitiesModal.style';
+import {
+  Modal,
+  ModalMain,
+  AmenitiesSection,
+  AmenitiesRow,
+  AmenityTitle,
+  AmenityDescription,
+  CloseSection,
+  CloseButton,
+} from './styles/AmenitiesModal.style';
 import makeKey from '../../../util/makeKey';
 
 function sortAmenities(amenities) {
@@ -22,15 +31,14 @@ function sortAmenities(amenities) {
 // this takes a tuple because that's what Object.entries returns
 function AmenityType([type, amenities]) {
   const amenityComponents = amenities.map((amenity) => (
-    <div key={makeKey('aml')}>
-      <h2>{amenity.amenity}</h2>
-      <p>{amenity.description}</p>
-      <hr />
-    </div>
+    <AmenitiesRow key={makeKey('aml')}>
+      <AmenityTitle>{amenity.amenity}</AmenityTitle>
+      <AmenityDescription>{amenity.description}</AmenityDescription>
+    </AmenitiesRow>
   ));
   return (
     <div key={makeKey('amt')}>
-      <h1>{type}</h1>
+      <h3>{type}</h3>
       {amenityComponents}
     </div>
   );
@@ -44,8 +52,13 @@ function AmenitiesModal({ show, amenities }) {
   return (
     <Modal show={show} onClick={navHome}>
       <ModalMain onClick={(e) => e.stopPropagation()}>
-        {typeComponents}
-        <button type="button" onClick={navHome}>X</button>
+        <CloseSection>
+          <CloseButton type="button" onClick={navHome}>x</CloseButton>
+        </CloseSection>
+        <AmenitiesSection>
+          <h2>Amenities</h2>
+          {typeComponents}
+        </AmenitiesSection>
       </ModalMain>
     </Modal>
   );

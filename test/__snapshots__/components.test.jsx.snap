@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`component tests it should render a description component 1`] = `
-.c3 {
+.c9 {
   padding-top: 32px;
   padding-bottom: 48px;
   border-bottom: 1px solid #ddd;
@@ -15,7 +15,7 @@ exports[`component tests it should render a description component 1`] = `
   width: 50%;
 }
 
-.c4 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -26,7 +26,7 @@ exports[`component tests it should render a description component 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -36,7 +36,7 @@ exports[`component tests it should render a description component 1`] = `
   flex-direction: column;
 }
 
-.c6 {
+.c12 {
   color: rgb(34,34,34) !important;
   font-weight: 600 !important;
   font-size: 16px !important;
@@ -44,7 +44,7 @@ exports[`component tests it should render a description component 1`] = `
   margin-bottom: 8px !important;
 }
 
-.c7 {
+.c13 {
   color: #222222 !important;
   display: block;
   font-weight: 400 !important;
@@ -52,11 +52,11 @@ exports[`component tests it should render a description component 1`] = `
   line-height: 20px !important;
 }
 
-.c8 {
+.c14 {
   border-radius: 50%;
 }
 
-.c9 {
+.c15 {
   font-size: inherit !important;
   font-family: inherit !important;
   font-style: inherit !important;
@@ -81,7 +81,7 @@ exports[`component tests it should render a description component 1`] = `
   outline: none !important;
 }
 
-.c14 {
+.c20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -91,7 +91,7 @@ exports[`component tests it should render a description component 1`] = `
   flex-direction: row;
 }
 
-.c15 {
+.c21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -99,9 +99,10 @@ exports[`component tests it should render a description component 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 50%;
 }
 
-.c16 {
+.c22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -109,11 +110,41 @@ exports[`component tests it should render a description component 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding-bottom: 16px;
 }
 
-.c17 {
+.c23 {
   margin-right: 16px !important;
   margin-left: 0px !important;
+}
+
+.c24 {
+  margin-top: 24px;
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin: 0px !important;
+  text-align: center !important;
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+  width: auto !important;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  outline: none !important;
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+  padding-left: 23px !important;
+  padding-right: 23px !important;
+  -webkit-transition: box-shadow 0.2s ease,-ms-transform 0.1s ease,-webkit-transform 0.1s ease,-webkit-transform 0.1s ease !important;
+  -webkit-transition: box-shadow 0.2s ease,-ms-transform 0.1s ease,-webkit-transform 0.1s ease,transform 0.1s ease !important;
+  transition: box-shadow 0.2s ease,-ms-transform 0.1s ease,-webkit-transform 0.1s ease,transform 0.1s ease !important;
+  border-color: #222222 !important;
+  background: #FFFFFF !important;
+  color: #222222 !important;
 }
 
 .c1 {
@@ -127,11 +158,19 @@ exports[`component tests it should render a description component 1`] = `
 }
 
 .c2 {
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 780px;
   position: fixed;
-  height: 70%;
-  overflow-y: scroll;
+  height: 900px;
   background: white;
-  width: 80%;
+  width: 100%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%,-50%);
@@ -139,7 +178,83 @@ exports[`component tests it should render a description component 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c10 {
+.c5 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 24px;
+  overflow-y: scroll;
+  margin-bottom: 24px;
+}
+
+.c6 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100% !important;
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
+  border-bottom: 1px solid #ddd;
+}
+
+.c7 {
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.c8 {
+  color: rgb(113,113,113) !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  margin-top: 4px !important;
+}
+
+.c3 {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex-grow: 0 !important;
+  -ms-flex-positive: 0 !important;
+  flex-grow: 0 !important;
+  -webkit-flex-shrink: 0 !important;
+  -ms-flex-negative: 0 !important;
+  flex-shrink: 0 !important;
+  -webkit-flex-basis: 72px !important;
+  -ms-flex-preferred-size: 72px !important;
+  flex-basis: 72px !important;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  text-align: left !important;
+  top: 0px !important;
+  z-index: -1 !important;
+}
+
+.c4 {
+  top: 24px;
+  left: 24px;
+  position: absolute;
+  display: inline-block !important;
+  color: rgb(34,34,34) !important;
+  cursor: pointer !important;
+  position: relative !important;
+  border-radius: 50% !important;
+  border-width: initial !important;
+  border-style: none !important;
+  border-color: initial !important;
+  border-image: initial !important;
+  outline: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  background: transparent !important;
+  -webkit-transition: -ms-transform 0.25s ease 0s,-webkit-transform 0.25s ease 0s,-webkit-transform 0.25s ease 0s !important;
+  -webkit-transition: -ms-transform 0.25s ease 0s,-webkit-transform 0.25s ease 0s,transform 0.25s ease 0s !important;
+  transition: -ms-transform 0.25s ease 0s,-webkit-transform 0.25s ease 0s,transform 0.25s ease 0s !important;
+}
+
+.c16 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -149,14 +264,14 @@ exports[`component tests it should render a description component 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
-.c11 {
+.c17 {
   margin-bottom: 8px;
 }
 
-.c13 {
+.c19 {
   color: rgb(34,34,34) !important;
   font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif !important;
   font-weight: 400 !important;
@@ -164,7 +279,7 @@ exports[`component tests it should render a description component 1`] = `
   line-height: 20px !important;
 }
 
-.c12 {
+.c18 {
   color: rgb(34,34,34) !important;
   font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif !important;
   font-weight: 600 !important;
@@ -184,93 +299,130 @@ exports[`component tests it should render a description component 1`] = `
       className="c2"
       onClick={[Function]}
     >
-      <div>
-        <h1>
-          Basic
-        </h1>
-        <div>
-          <h2>
-            Essentials
-          </h2>
-          <p>
-            
-          </p>
-          <hr />
-        </div>
-        <div>
-          <h2>
-            Wifi
-          </h2>
-          <p>
-            
-          </p>
-          <hr />
-        </div>
-        <div>
-          <h2>
-            TV
-          </h2>
-          <p>
-            
-          </p>
-          <hr />
-        </div>
-        <div>
-          <h2>
-            Heat
-          </h2>
-          <p>
-            
-          </p>
-          <hr />
-        </div>
-        <div>
-          <h2>
-            Air Conditioning
-          </h2>
-          <p>
-            
-          </p>
-          <hr />
-        </div>
-      </div>
-      <button
-        onClick={[Function]}
-        type="button"
+      <div
+        className="c3"
       >
-        X
-      </button>
-    </div>
-  </section>
-  <div
-    className="c3"
-  >
-    <div
-      className="c4"
-    >
+        <button
+          className="c4"
+          onClick={[Function]}
+          type="button"
+        >
+          x
+        </button>
+      </div>
       <div
         className="c5"
       >
+        <h2>
+          Amenities
+        </h2>
+        <div>
+          <h3>
+            Basic
+          </h3>
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              Essentials
+            </div>
+            <div
+              className="c8"
+            >
+              
+            </div>
+          </div>
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              Wifi
+            </div>
+            <div
+              className="c8"
+            >
+              
+            </div>
+          </div>
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              TV
+            </div>
+            <div
+              className="c8"
+            >
+              
+            </div>
+          </div>
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              Heat
+            </div>
+            <div
+              className="c8"
+            >
+              
+            </div>
+          </div>
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              Air Conditioning
+            </div>
+            <div
+              className="c8"
+            >
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+    className="c9"
+  >
+    <div
+      className="c10"
+    >
+      <div
+        className="c11"
+      >
         <div
-          className="c6"
+          className="c12"
         >
           Cozy apartment in Portland hosted by Devyn Macejkovic
         </div>
         <div
-          className="c7"
+          className="c13"
         >
           1 guest · 1 bedroom · 1 bed
         </div>
       </div>
       <img
         alt="user"
-        className="c8"
+        className="c14"
         src="http://lorempixel.com/56/56/"
       />
     </div>
   </div>
   <div
-    className="c3"
+    className="c9"
   >
     <span
       width={0}
@@ -300,7 +452,7 @@ Temporibus quia officiis cumque eos ut nemo occaecati voluptatibus dolor. Totam 
         <span>
           ...
           <button
-            className="c9"
+            className="c15"
             onClick={[Function]}
             type="button"
           >
@@ -311,42 +463,42 @@ Temporibus quia officiis cumque eos ut nemo occaecati voluptatibus dolor. Totam 
     </span>
   </div>
   <div
-    className="c3"
+    className="c9"
   >
     <div
-      className="c10"
+      className="c16"
     >
       <div
-        className="c11"
+        className="c17"
       >
         <SvgrURL />
       </div>
       <div
-        className="c12"
+        className="c18"
       >
         Common Space
       </div>
       <div
-        className="c13"
+        className="c19"
       >
         1 Double
       </div>
     </div>
   </div>
   <div
-    className="c3"
+    className="c9"
   >
     <div
-      className="c14"
+      className="c20"
     >
       <div
-        className="c15"
+        className="c21"
       >
         <div
-          className="c16"
+          className="c22"
         >
           <div
-            className="c17"
+            className="c23"
           >
             <SvgrURL />
           </div>
@@ -355,10 +507,10 @@ Temporibus quia officiis cumque eos ut nemo occaecati voluptatibus dolor. Totam 
           </div>
         </div>
         <div
-          className="c16"
+          className="c22"
         >
           <div
-            className="c17"
+            className="c23"
           >
             <SvgrURL />
           </div>
@@ -367,10 +519,10 @@ Temporibus quia officiis cumque eos ut nemo occaecati voluptatibus dolor. Totam 
           </div>
         </div>
         <div
-          className="c16"
+          className="c22"
         >
           <div
-            className="c17"
+            className="c23"
           >
             <SvgrURL />
           </div>
@@ -379,10 +531,10 @@ Temporibus quia officiis cumque eos ut nemo occaecati voluptatibus dolor. Totam 
           </div>
         </div>
         <div
-          className="c16"
+          className="c22"
         >
           <div
-            className="c17"
+            className="c23"
           >
             <SvgrURL />
           </div>
@@ -391,10 +543,10 @@ Temporibus quia officiis cumque eos ut nemo occaecati voluptatibus dolor. Totam 
           </div>
         </div>
         <div
-          className="c16"
+          className="c22"
         >
           <div
-            className="c17"
+            className="c23"
           >
             <SvgrURL />
           </div>
@@ -404,10 +556,11 @@ Temporibus quia officiis cumque eos ut nemo occaecati voluptatibus dolor. Totam 
         </div>
       </div>
       <div
-        className="c15"
+        className="c21"
       />
     </div>
     <a
+      className="c24"
       href="/amenities"
       onClick={[Function]}
     >

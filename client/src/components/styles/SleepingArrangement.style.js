@@ -5,7 +5,7 @@ const ArrangementBox = styled.div`
   padding: 20px;
   flex-direction: column;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 12px;
 `;
 
 const BedIcon = styled.div`

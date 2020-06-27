@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import makeKey from '../../../util/makeKey';
 import Amenity from './Amenity';
 import { Section } from './styles/Description.style';
-import { AmenitiesBox, AmenitiesColumn } from './styles/Amenities.style';
+import { AmenitiesBox, AmenitiesColumn, ShowMore } from './styles/Amenities.style';
 
 function Amenities({ amenities }) {
   const amenityComponents = amenities.slice(0, 10).map(({ amenity }) => (
@@ -21,7 +20,7 @@ function Amenities({ amenities }) {
           {amenityComponents.slice(5)}
         </AmenitiesColumn>
       </AmenitiesBox>
-      <Link replace to="/amenities">All Amenities</Link>
+      <ShowMore replace to="/amenities">All Amenities</ShowMore>
     </Section>
   );
 }
