@@ -1,19 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import makeKey from '../../../util/makeKey';
 import Title from './Title';
+import Body from './Body';
 import Amenity from './Amenity';
+import Amenities from './Amenities';
 import AmenitiesModal from './AmenitiesModal';
 import SleepingArrangment from './SleepingArrangement';
-import User from './User';
-import DescriptionStyle from './styles/Description.style';
-
-function makeAmenities(amenities) {
-  return amenities.map(({ amenity, description }) => (
-    <Amenity key={makeKey('da')} amenity={amenity} description={description} />
-  ));
-}
+import { DescriptionBox } from './styles/Description.style';
 
 function makeArrangements(sleepingArrangements) {
   return sleepingArrangements.map(({ location, beds }) => (
@@ -25,21 +19,18 @@ function Description({ data, showModal }) {
   const {
     body, title, guests, bedrooms, beds, amenities, sleepingArrangements, user,
   } = data;
-  const amenityComponents = makeAmenities(amenities);
   const sleepingComponents = makeArrangements(sleepingArrangements);
   return (
-    <DescriptionStyle>
+    <DescriptionBox>
       <AmenitiesModal
         show={showModal}
         amenities={amenities}
       />
-      <Link to="/amenities">All Amenities</Link>
-      <Title title={title} guests={guests} bedrooms={bedrooms} beds={beds} />
-      <User name={user.name} image={user.image} />
-      <div>{body}</div>
+      <Title title={title} guests={guests} bedrooms={bedrooms} beds={beds} user={user} />
+      <Body>{body}</Body>
       {sleepingComponents}
-      {amenityComponents}
-    </DescriptionStyle>
+      <Amenities amenities={amenities} />
+    </DescriptionBox>
   );
 }
 
@@ -53,7 +44,7 @@ Description.propTypes = {
     beds: PropTypes.number.isRequired,
     amenities: PropTypes.arrayOf(PropTypes.shape(Amenity.propTypes)),
     sleepingArrangements: PropTypes.arrayOf(PropTypes.shape(SleepingArrangment.propTypes)),
-    user: PropTypes.shape(User.propTypes),
+    user: PropTypes.shape(Title.propTypes.user),
   }).isRequired,
 };
 

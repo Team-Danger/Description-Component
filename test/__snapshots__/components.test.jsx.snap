@@ -1,106 +1,435 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`component tests it should render a description component 1`] = `
+.c9 {
+  padding-top: 32px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #ddd;
+}
+
+.c0 {
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  width: 50%;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c12 {
+  color: rgb(34,34,34) !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  margin-bottom: 8px !important;
+}
+
+.c13 {
+  color: #222222 !important;
+  display: block;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+
+.c14 {
+  border-radius: 50%;
+}
+
+.c15 {
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-style: inherit !important;
+  line-height: inherit !important;
+  cursor: pointer !important;
+  -webkit-user-select: auto !important;
+  -moz-user-select: auto !important;
+  -ms-user-select: auto !important;
+  user-select: auto !important;
+  color: rgb(34,34,34) !important;
+  font-weight: 600 !important;
+  background: transparent !important;
+  border-width: 0px !important;
+  border-style: initial !important;
+  border-color: initial !important;
+  border-image: initial !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  -webkit-text-decoration: underline !important;
+  text-decoration: underline !important;
+  border-radius: 4px !important;
+  outline: none !important;
+}
+
+.c20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c21 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 50%;
+}
+
+.c22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 16px;
+}
+
+.c23 {
+  margin-right: 16px !important;
+  margin-left: 0px !important;
+}
+
+.c24 {
+  margin-top: 24px;
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin: 0px !important;
+  text-align: center !important;
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+  width: auto !important;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  outline: none !important;
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+  padding-left: 23px !important;
+  padding-right: 23px !important;
+  -webkit-transition: box-shadow 0.2s ease,-ms-transform 0.1s ease,-webkit-transform 0.1s ease,-webkit-transform 0.1s ease !important;
+  -webkit-transition: box-shadow 0.2s ease,-ms-transform 0.1s ease,-webkit-transform 0.1s ease,transform 0.1s ease !important;
+  transition: box-shadow 0.2s ease,-ms-transform 0.1s ease,-webkit-transform 0.1s ease,transform 0.1s ease !important;
+  border-color: #222222 !important;
+  background: #FFFFFF !important;
+  color: #222222 !important;
+}
+
+.c1 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.c2 {
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 780px;
+  position: fixed;
+  height: 900px;
+  background: white;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c5 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 24px;
+  overflow-y: scroll;
+  margin-bottom: 24px;
+}
+
+.c6 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100% !important;
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
+  border-bottom: 1px solid #ddd;
+}
+
+.c7 {
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.c8 {
+  color: rgb(113,113,113) !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  margin-top: 4px !important;
+}
+
+.c3 {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex-grow: 0 !important;
+  -ms-flex-positive: 0 !important;
+  flex-grow: 0 !important;
+  -webkit-flex-shrink: 0 !important;
+  -ms-flex-negative: 0 !important;
+  flex-shrink: 0 !important;
+  -webkit-flex-basis: 72px !important;
+  -ms-flex-preferred-size: 72px !important;
+  flex-basis: 72px !important;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  text-align: left !important;
+  top: 0px !important;
+  z-index: -1 !important;
+}
+
+.c4 {
+  top: 24px;
+  left: 24px;
+  position: absolute;
+  display: inline-block !important;
+  color: rgb(34,34,34) !important;
+  cursor: pointer !important;
+  position: relative !important;
+  border-radius: 50% !important;
+  border-width: initial !important;
+  border-style: none !important;
+  border-color: initial !important;
+  border-image: initial !important;
+  outline: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  background: transparent !important;
+  -webkit-transition: -ms-transform 0.25s ease 0s,-webkit-transform 0.25s ease 0s,-webkit-transform 0.25s ease 0s !important;
+  -webkit-transition: -ms-transform 0.25s ease 0s,-webkit-transform 0.25s ease 0s,transform 0.25s ease 0s !important;
+  transition: -ms-transform 0.25s ease 0s,-webkit-transform 0.25s ease 0s,transform 0.25s ease 0s !important;
+}
+
+.c16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 20px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.c17 {
+  margin-bottom: 8px;
+}
+
+.c19 {
+  color: rgb(34,34,34) !important;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+
+.c18 {
+  color: rgb(34,34,34) !important;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  margin-bottom: 8px;
+}
+
 <div
-  className=""
+  className="c0"
 >
   <section
-    className=""
+    className="c1"
     onClick={[Function]}
   >
     <div
-      className=""
+      className="c2"
       onClick={[Function]}
     >
-      <div>
-        <h1>
-          Basic
-        </h1>
+      <div
+        className="c3"
+      >
+        <button
+          className="c4"
+          onClick={[Function]}
+          type="button"
+        >
+          x
+        </button>
+      </div>
+      <div
+        className="c5"
+      >
+        <h2>
+          Amenities
+        </h2>
         <div>
-          <h2>
-            Essentials
-          </h2>
-          <p>
-            
-          </p>
-          <hr />
-        </div>
-        <div>
-          <h2>
-            Wifi
-          </h2>
-          <p>
-            
-          </p>
-          <hr />
-        </div>
-        <div>
-          <h2>
-            TV
-          </h2>
-          <p>
-            
-          </p>
-          <hr />
-        </div>
-        <div>
-          <h2>
-            Heat
-          </h2>
-          <p>
-            
-          </p>
-          <hr />
-        </div>
-        <div>
-          <h2>
-            Air Conditioning
-          </h2>
-          <p>
-            
-          </p>
-          <hr />
+          <h3>
+            Basic
+          </h3>
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              Essentials
+            </div>
+            <div
+              className="c8"
+            >
+              
+            </div>
+          </div>
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              Wifi
+            </div>
+            <div
+              className="c8"
+            >
+              
+            </div>
+          </div>
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              TV
+            </div>
+            <div
+              className="c8"
+            >
+              
+            </div>
+          </div>
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              Heat
+            </div>
+            <div
+              className="c8"
+            >
+              
+            </div>
+          </div>
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              Air Conditioning
+            </div>
+            <div
+              className="c8"
+            >
+              
+            </div>
+          </div>
         </div>
       </div>
-      <button
-        onClick={[Function]}
-        type="button"
-      >
-        X
-      </button>
     </div>
   </section>
-  <a
-    href="/amenities"
-    onClick={[Function]}
+  <div
+    className="c9"
   >
-    All Amenities
-  </a>
-  <div>
-    <div>
-      Cozy apartment in Portland
-    </div>
-    <div>
-      1
-    </div>
-    <div>
-      1
-    </div>
-    <div>
-      1
+    <div
+      className="c10"
+    >
+      <div
+        className="c11"
+      >
+        <div
+          className="c12"
+        >
+          Cozy apartment in Portland hosted by Devyn Macejkovic
+        </div>
+        <div
+          className="c13"
+        >
+          1 guest · 1 bedroom · 1 bed
+        </div>
+      </div>
+      <img
+        alt="user"
+        className="c14"
+        src="http://lorempixel.com/56/56/"
+      />
     </div>
   </div>
-  <div>
-    <img
-      alt="Devyn Macejkovic"
-      src="https://github.com/Team-Danger/FEC-Description-Component/util/profileImages/001.jpg"
-    />
-    <div>
-      Devyn Macejkovic
-    </div>
-  </div>
-  <div>
-    Minima perspiciatis praesentium aperiam. Ut occaecati deserunt voluptatem suscipit. Enim minus nemo fugit et iure explicabo et commodi consequuntur.
+  <div
+    className="c9"
+  >
+    <span
+      width={0}
+    >
+      <span />
+      <span>
+        Minima perspiciatis praesentium aperiam. Ut occaecati deserunt voluptatem suscipit. Enim minus nemo fugit et iure explicabo et commodi consequuntur.
  
 Nesciunt dignissimos eos temporibus temporibus autem consequatur ea laudantium esse. Qui occaecati omnis quis amet voluptatum. Et libero ea et odio. Qui velit qui velit. Provident non fugiat dolorum amet a a aut nihil vel.
  
@@ -109,76 +438,134 @@ Excepturi eligendi perferendis quo minus et asperiores nam. Blanditiis consequun
 Sunt est itaque ad aut. Quos quis laboriosam molestias quisquam ratione aut est omnis necessitatibus. Ut consectetur voluptas nam praesentium voluptates libero neque.
  
 Temporibus quia officiis cumque eos ut nemo occaecati voluptatibus dolor. Totam praesentium ducimus tempore qui rerum autem atque. Esse est inventore autem eligendi aliquid. Voluptates quis quo. Eveniet deleniti quam sed totam nam et.
+      </span>
+      <span
+        style={
+          Object {
+            "left": 0,
+            "position": "fixed",
+            "top": 0,
+            "visibility": "hidden",
+          }
+        }
+      >
+        <span>
+          ...
+          <button
+            className="c15"
+            onClick={[Function]}
+            type="button"
+          >
+            read more
+          </button>
+        </span>
+      </span>
+    </span>
   </div>
-  <div>
-    <div>
-      Common Space
-    </div>
-    <div>
-      <div>
-        <div>
-          1
-        </div>
-        <div>
-          Double
-        </div>
+  <div
+    className="c9"
+  >
+    <div
+      className="c16"
+    >
+      <div
+        className="c17"
+      >
+        <SvgrURL />
+      </div>
+      <div
+        className="c18"
+      >
+        Common Space
+      </div>
+      <div
+        className="c19"
+      >
+        1 Double
       </div>
     </div>
   </div>
-  <div>
-    <div>
-      icon here
+  <div
+    className="c9"
+  >
+    <div
+      className="c20"
+    >
+      <div
+        className="c21"
+      >
+        <div
+          className="c22"
+        >
+          <div
+            className="c23"
+          >
+            <SvgrURL />
+          </div>
+          <div>
+            Essentials
+          </div>
+        </div>
+        <div
+          className="c22"
+        >
+          <div
+            className="c23"
+          >
+            <SvgrURL />
+          </div>
+          <div>
+            Wifi
+          </div>
+        </div>
+        <div
+          className="c22"
+        >
+          <div
+            className="c23"
+          >
+            <SvgrURL />
+          </div>
+          <div>
+            TV
+          </div>
+        </div>
+        <div
+          className="c22"
+        >
+          <div
+            className="c23"
+          >
+            <SvgrURL />
+          </div>
+          <div>
+            Heat
+          </div>
+        </div>
+        <div
+          className="c22"
+        >
+          <div
+            className="c23"
+          >
+            <SvgrURL />
+          </div>
+          <div>
+            Air Conditioning
+          </div>
+        </div>
+      </div>
+      <div
+        className="c21"
+      />
     </div>
-    <div>
-      Essentials
-    </div>
-    <div>
-      
-    </div>
-  </div>
-  <div>
-    <div>
-      icon here
-    </div>
-    <div>
-      Wifi
-    </div>
-    <div>
-      
-    </div>
-  </div>
-  <div>
-    <div>
-      icon here
-    </div>
-    <div>
-      TV
-    </div>
-    <div>
-      
-    </div>
-  </div>
-  <div>
-    <div>
-      icon here
-    </div>
-    <div>
-      Heat
-    </div>
-    <div>
-      
-    </div>
-  </div>
-  <div>
-    <div>
-      icon here
-    </div>
-    <div>
-      Air Conditioning
-    </div>
-    <div>
-      
-    </div>
+    <a
+      className="c24"
+      href="/amenities"
+      onClick={[Function]}
+    >
+      All Amenities
+    </a>
   </div>
 </div>
 `;
