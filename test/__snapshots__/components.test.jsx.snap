@@ -184,7 +184,6 @@ exports[`component tests it should render a description component 1`] = `
   flex: 1 1 auto;
   padding: 24px;
   overflow-y: scroll;
-  margin-bottom: 24px;
 }
 
 .c6 {
@@ -197,7 +196,7 @@ exports[`component tests it should render a description component 1`] = `
   flex-direction: column;
   width: 100% !important;
   margin-top: 24px !important;
-  margin-bottom: 24px !important;
+  padding-bottom: 24px !important;
   border-bottom: 1px solid #ddd;
 }
 

@@ -9,7 +9,7 @@
     "verify": "npm run test && npm run lint",
     "seed": "node db/seed.js",
     "server": "nodemon server/server.js",
-    "client:prod": "webpack --watch --mode production",
+    "client:build": "webpack --mode production",
     "client:dev": "webpack --watch --mode development",
     "updateSnapshots": "jest --updateSnapshot"
   },

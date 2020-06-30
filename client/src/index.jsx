@@ -10,7 +10,7 @@ import axios from 'axios';
 import Description from './components/Description';
 
 function makeUrl(id) {
-  return `http://localhost:3000/${id}/description`;
+  return `/api/description/${id}`;
 }
 
 class App extends React.Component {
