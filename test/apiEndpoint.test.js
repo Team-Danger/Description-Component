@@ -22,12 +22,12 @@ test('api should respond with the right data', async () => {
   });
   const req = request(app);
   const promises = [
-    req.get('/001/description')
+    req.get('/api/description/001')
       .then((res) => {
         expect(res.statusCode).toBe(200);
         expect(res.text).toEqual(JSON.stringify(testListing));
       }),
-    req.get('/002/description')
+    req.get('/api/description/002')
       .then((res) => {
         expect(res.statusCode).toBe(500);
       }),
