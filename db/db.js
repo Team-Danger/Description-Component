@@ -1,7 +1,8 @@
 const Console = require('console');
 const mongoose = require('mongoose');
 
-const mongoUri = 'mongodb://localhost/airbnbdesc';
+const mongoUri = 'mongodb://mongo/airbnbdesc';
+console.log('here-----', mongoUri);
 
 const db = mongoose.connect(mongoUri, {
   useUnifiedTopology: true,

@@ -4,7 +4,7 @@ const Listing = require('../db/Listing');
 
 const app = express();
 
-app.get('/:id/description', (req, res) => {
+app.get('/api/description/:id', (req, res) => {
   Listing.findOne({ listingId: req.params.id })
     .then((listing) => {
       if (listing === null) {

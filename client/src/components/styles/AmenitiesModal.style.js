@@ -28,7 +28,6 @@ const AmenitiesSection = styled.div`
   flex: 1 1 auto;
   padding: 24px;
   overflow-y: scroll;
-  margin-bottom: 24px;
 `;
 
 const AmenitiesRow = styled.div`
@@ -36,7 +35,7 @@ const AmenitiesRow = styled.div`
   flex-direction: column;
   width: 100% !important;
   margin-top: 24px !important;
-  margin-bottom: 24px !important;
+  padding-bottom: 24px !important;
   border-bottom: 1px solid #ddd;
 `;
 
