@@ -49,4 +49,4 @@ App.propTypes = {
   endpoint: PropTypes.string.isRequired,
 };
 
-ReactDOM.render(<App endpoint={makeUrl('001')} />, document.getElementById('container'));
+ReactDOM.render(<App endpoint={makeUrl('001')} />, document.getElementById('description'));

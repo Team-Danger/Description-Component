@@ -11,7 +11,6 @@ const DescriptionBox = styled.div`
   font-weight: 400 !important;
   font-size: 16px !important;
   line-height: 24px !important;
-  width: 50%;
 `;
 
 export { DescriptionBox, Section };
