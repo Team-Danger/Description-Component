@@ -45,7 +45,7 @@
     "compression": "^1.7.4",
     "enzyme": "^3.11.0",
     "eslint-plugin-jest": "^23.13.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "faker": "^4.1.0",
     "jest": "^26.0.1",
     "jest-styled-components": "^7.0.2",
